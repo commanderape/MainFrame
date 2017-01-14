@@ -107,7 +107,11 @@
           </div>
         </div>
         <footer class="mdl-mini-footer">
-        	<?php echo $_SERVER['SERVER_ADDR']; ?>
+        	<?php
+        		$host= gethostname(); 
+        		$ip = gethostbyname($host);
+        		echo $ip;
+        	?>
         </footer>
       </main>
       <div class="mdl-layout__obfuscator"></div>
