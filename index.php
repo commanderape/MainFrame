@@ -107,7 +107,7 @@
           </div>
         </div>
         <footer class="mdl-mini-footer">
-        	LALA
+        	<?php echo $_SERVER['SERVER_ADDR']; ?>
         </footer>
       </main>
       <div class="mdl-layout__obfuscator"></div>
