@@ -109,9 +109,9 @@
         <footer class="mdl-mini-footer">
         	<?php
 				function getLocalIP(){
-				    exec("ipconfig /all", $output);
+				    exec("ifconfig wlan1", $output);
 				        foreach($output as $line){
-				            if (preg_match("/(.*)IPv4 Address(.*)/", $line)){
+				            if (preg_match("/(.*)inet addr:(.*)/", $line)){
 				                $ip = $line;
 				                $ip = str_replace("IPv4 Address. . . . . . . . . . . :","",$ip);
 				                $ip = str_replace("(Preferred)","",$ip);
