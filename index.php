@@ -77,17 +77,9 @@
               </div>
             </div>
           </div>
-          <nav class="demo-nav mdl-cell mdl-cell--12-col">
-            <div class="section-spacer"></div>
-            <a href="entry.html" class="demo-nav__button" title="show more">
-              More
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                <i class="material-icons" role="presentation">arrow_forward</i>
-              </button>
-            </a>
-          </nav>
         </div>
         <footer class="mdl-mini-footer">
+        	LALA
         </footer>
       </main>
       <div class="mdl-layout__obfuscator"></div>
