@@ -1,3 +1,7 @@
+body {
+  background-color: #000;
+}
+
 body .demo-blog {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
