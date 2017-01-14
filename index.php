@@ -118,7 +118,8 @@
 				        }
 				    return $ip;
 				}
-				echo $ip = getLocalIP();
+				$ip = getLocalIP();
+				echo substr($ip, 0, 10);
         	?>
         </footer>
       </main>
