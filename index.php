@@ -113,8 +113,7 @@
 				        foreach($output as $line){
 				            if (preg_match("/(.*)inet addr:(.*)/", $line)){
 				                $ip = $line;
-				                $ip = str_replace("IPv4 Address. . . . . . . . . . . :","",$ip);
-				                $ip = str_replace("(Preferred)","",$ip);
+				                $ip = str_replace("inet addr:","",$ip);
 				            }
 				        }
 				    return $ip;
