@@ -84,7 +84,7 @@
             </div>
             <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
               <div>
-                <strong>The Newist</strong>
+                <strong>Weather/strong>
               </div>
               <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
                 <li class="mdl-menu__item">About</li>
