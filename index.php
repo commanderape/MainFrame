@@ -91,9 +91,9 @@ $ip = getLocalIP();
             </svg>
           </div>
           <div class="mdl-grid ">
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-desktop">LALALA
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-desktop mdl-center-text">Bad Camberg - Wiesbaden
             </div>
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-desktop">LOLOLOL
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-desktop mdl-center-text">Bad Camberg - Beselich
             </div>
           </div>
           <div class="mdl-card__actions mdl-card--border">
@@ -136,7 +136,7 @@ $ip = getLocalIP();
           </div>
       </main>
       <footer class="mdl-mini-footer">
-        <?php echo date("d.m.Y G:i") ?>
+        <?php echo date("d.m.Y G:i")." Uhr" ?>
         <?php echo $ip; ?>
       </footer>
     </div>

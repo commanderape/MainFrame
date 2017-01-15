@@ -248,3 +248,7 @@ _:-ms-input-placeholder, :root .demo-graph {
   padding-bottom: 0;
   margin-bottom: -8px;
 }
+
+.mdl-center-text{
+  text-align: center;
+}
