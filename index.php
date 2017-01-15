@@ -7,13 +7,16 @@ include 'directions.php';
 
 date_default_timezone_set('Europe/Berlin');
 $date = date('d.m.Y h:i', time());
-
 function getLocalIP(){
+  $ip="";
     exec("ifconfig wlan1", $output);
         foreach($output as $line){
             if (preg_match("/(.*)inet addr:(.*)/", $line)){
                 $ip = $line;
                 $ip = str_replace("inet addr:","",$ip);
+                $ip = strtok($ip, 'B');
+            }else{
+              $ip="none";
             }
         }
     return $ip;
