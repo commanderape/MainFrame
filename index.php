@@ -72,37 +72,26 @@ $ip = getLocalIP();
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
   </head>
   <body>
     <div class="">
       <header>
       </header>
       <main class="mdl-layout__content mdl-color--grey-100">
-        <div class="mdl-grid demo-content">
-          <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-grid">
-
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart <?php echo $duration_status_so; ?> mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1"><?php echo gmdate("i",$duration_in_traffic_so); ?><tspan font-size="0.1" dy="-0.07">min</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart <?php echo $duration_status_so; ?> mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1"><?php echo gmdate("i",$duration_in_traffic_bi); ?><tspan font-size="0.1" dy="-0.07">min</tspan></text>
-            </svg>
-            <div class="mdl-card__actions mdl-card--border">
-                <i class="material-icons" style="float:left; margin-top:4px;">directions_car</i><a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Fahrzeiten<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
-              </div>
+          <div class="mdl-grid">
+            <div class="mdl-color--white mdl-shadow--2dp">
+              <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart <?php echo $duration_status_so; ?> mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                <use xlink:href="#piechart" mask="url(#piemask)" />
+                <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1"><?php echo gmdate("i",$duration_in_traffic_so); ?><tspan font-size="0.1" dy="-0.07">min</tspan></text>
+              </svg>
+              <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart <?php echo $duration_status_so; ?> mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                <use xlink:href="#piechart" mask="url(#piemask)" />
+                <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1"><?php echo gmdate("i",$duration_in_traffic_bi); ?><tspan font-size="0.1" dy="-0.07">min</tspan></text>
+              </svg>
+              <div class="mdl-card__actions mdl-card--border">
+                  <i class="material-icons" style="float:left; margin-top:4px;">directions_car</i><a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Fahrzeiten<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                </div>
+            </div>
           </div>
 <!--           <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
             <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
@@ -112,35 +101,32 @@ $ip = getLocalIP();
               <use xlink:href="#chart" />
             </svg>
           </div> -->
-          <div>
-            <div class="demo-cards mdl-cell mdl-cell---col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-              <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                  <h2 class="mdl-card__title-text">Updates</h2>
-                </div>
-                <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                  <?php echo $duration_status_so; ?>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
-                </div>
+          <div class="demo-cards mdl-grid">
+            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col">
+              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+                <h2 class="mdl-card__title-text">Updates</h2>
               </div>
-              <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                  <h2 class="mdl-card__title-text">Updates</h2>
-                </div>
-                <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                  <?php echo $duration_status_so; ?>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
-                </div>
+              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                <?php echo $duration_status_so; ?>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
+              </div>
+            </div>
+            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col">
+              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+                <h2 class="mdl-card__title-text">Updates</h2>
+              </div>
+              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                <?php echo $duration_status_so; ?>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
               </div>
             </div>
           </div>
-        </div>
       </main>
-      <footer class="mdl-mini-footer" style:>
+      <footer class="mdl-mini-footer">
         <?php echo date("d.m.Y G:i") ?>
         <?php echo $ip; ?>
       </footer>
