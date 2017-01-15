@@ -243,3 +243,8 @@ _:-ms-input-placeholder, :root .demo-graph {
 .mdl-layout__content{
   display:block;
 }
+
+.mdl-grid--no-spacing-bottom {
+  padding-bottom: 0;
+  margin-bottom: -8px;
+}

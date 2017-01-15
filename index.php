@@ -78,7 +78,7 @@ $ip = getLocalIP();
       <header>
       </header>
       <main class="mdl-layout__content mdl-color--grey-100">
-        <div class="demo-cards mdl-grid">
+        <div class="demo-cards mdl-grid mdl-grid--no-spacing-bottom">
           <div class="mdl-shadow--2dp mdl-cell mdl-cell--12-col">
             <div class="mdl-grid">
             <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart <?php echo $duration_status_so; ?> mdl-cell mdl-cell--4-col">
