@@ -78,8 +78,9 @@ $ip = getLocalIP();
       <header>
       </header>
       <main class="mdl-layout__content mdl-color--grey-100">
-        <div class="mdl-color--white mdl-shadow--2dp">
-          <div class="mdl-grid">
+        <div class="demo-cards mdl-grid">
+          <div class="mdl-shadow--2dp">
+            <div class="mdl-grid">
             <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart <?php echo $duration_status_so; ?> mdl-cell mdl-cell--4-col">
               <use xlink:href="#piechart" mask="url(#piemask)" />
               <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1"><?php echo gmdate("i",$duration_in_traffic_so); ?><tspan font-size="0.1" dy="-0.07">min</tspan></text>
@@ -92,7 +93,9 @@ $ip = getLocalIP();
           <div class="mdl-card__actions mdl-card--border">
               <i class="material-icons" style="float:left; margin-top:4px;">directions_car</i><a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Fahrzeiten<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
           </div>
+          </div>
         </div>
+
 <!--           <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
             <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
               <use xlink:href="#chart" />
