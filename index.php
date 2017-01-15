@@ -100,7 +100,7 @@ $ip = getLocalIP();
               <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1"><?php echo gmdate("i",$duration_in_traffic_bi); ?><tspan font-size="0.1" dy="-0.07">min</tspan></text>
             </svg>
             <div class="mdl-card__actions mdl-card--border">
-                <i class="material-icons">directions_car</i><a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Fahrzeiten - <?php echo $ip; ?><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                <i class="material-icons">directions_car</i><a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Fahrzeitens - <?php echo $ip; ?><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
               </div>
           </div>
           <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
