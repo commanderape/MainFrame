@@ -14,7 +14,7 @@ function getLocalIP(){
             if (preg_match("/(.*)inet addr:(.*)/", $line)){
                 $ip = $line;
                 $ip = str_replace("inet addr:","",$ip);
-                $ip = substr($ip, 0, 16);
+                $ip = substr($ip, 0, 25);
             }
         }
     return $ip;
