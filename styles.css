@@ -239,3 +239,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 .mdl-mini-footer{
   padding:8px 16px;
 }
+
+.mdl-layout__content{
+  display:block;
+}
