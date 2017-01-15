@@ -8,6 +8,17 @@ include 'directions.php';
 date_default_timezone_set('Europe/Berlin');
 $date = date('d.m.Y h:i', time());
 
+function getLocalIP(){
+    exec("ifconfig wlan1", $output);
+        foreach($output as $line){
+            if (preg_match("/(.*)inet addr:(.*)/", $line)){
+                $ip = $line;
+                $ip = str_replace("inet addr:","",$ip);
+            }
+        }
+    return $ip;
+}
+$ip = getLocalIP();
 ?>
 
 <!doctype html>
@@ -27,7 +38,7 @@ $date = date('d.m.Y h:i', time());
   See the License for the specific language governing permissions and
   limitations under the License
 -->
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -89,7 +100,7 @@ $date = date('d.m.Y h:i', time());
               <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1"><?php echo gmdate("i",$duration_in_traffic_bi); ?><tspan font-size="0.1" dy="-0.07">min</tspan></text>
             </svg>
             <div class="mdl-card__actions mdl-card--border">
-                <i class="material-icons">directions_car</i><a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Fahrzeiten<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                <i class="material-icons">directions_car</i><a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Fahrzeiten - <?php echo $ip; ?><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
               </div>
           </div>
           <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
