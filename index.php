@@ -91,9 +91,9 @@ $ip = getLocalIP();
             </svg>
           </div>
           <div class="mdl-grid ">
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-desktop mdl-center-text">Bad Camberg - Wiesbaden
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-desktop mdl-center-text">Wiesbaden
             </div>
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-desktop mdl-center-text">Bad Camberg - Beselich
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-desktop mdl-center-text">Beselich
             </div>
           </div>
           <div class="mdl-card__actions mdl-card--border">
