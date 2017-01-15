@@ -104,16 +104,16 @@ $ip = getLocalIP();
                 <i class="material-icons" style="float:left; margin-top:4px;">directions_car</i><a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Fahrzeiten<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
               </div>
           </div>
-          <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
+<!--           <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
             <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
               <use xlink:href="#chart" />
             </svg>
             <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
               <use xlink:href="#chart" />
             </svg>
-          </div>
+          </div> -->
           <div>
-            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+            <div class="demo-cards mdl-cell mdl-cell---col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
               <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
                 <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
                   <h2 class="mdl-card__title-text">Updates</h2>
